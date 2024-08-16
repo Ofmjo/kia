@@ -15,6 +15,41 @@
    </head>
    <body>
       <div class="container h-screen w-full flex flex-col">
+            <div id="header" class="navbar">
+               <div class="navbar-start">
+                 <div class="dropdown">
+                   <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                     <svg
+                       xmlns="http://www.w3.org/2000/svg"
+                       class="h-5 w-5"
+                       fill="none"
+                       viewBox="0 0 24 24"
+                       stroke="currentColor">
+                       <path
+                         stroke-linecap="round"
+                         stroke-linejoin="round"
+                         stroke-width="2"
+                         d="M4 6h16M4 12h8m-8 6h16" />
+                     </svg>
+                   </div>
+                   <ul
+                     tabindex="0"
+                     class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                     <li><a>Статистика</a></li>
+                     <li><a>Путевой лист</a></li>
+                     <li><a>Настройки</a></li>
+                   </ul>
+                 </div>
+                 <a class="btn btn-ghost text-xl">Путевой лист</a>
+               </div>
+               <div class="navbar-center hidden lg:flex">
+                 <ul class="menu menu-horizontal px-1">
+                  <li><a>Статистика</a></li>
+                  <li><a>Путевой лист</a></li>
+                  <li><a>Настройки</a></li>
+                 </ul>
+               </div>
+             </div>
          <div id="main" class="flex-1 px-5 py-5">
             <div class="grid gap-2 grid-cols-2 lg:grid-cols-2 xl:grid-cols-4">
                <div aria-label="Card" class="card">
@@ -135,23 +170,6 @@
                 Добавить запись
                 </button>
             </form>
-         </div>
-         <div id="footer" class="grid grid-flow-col justify-stretch gap-1">
-            <div>
-                <button class="btn gap-2 btn-primary rounded-none w-full">
-                Статистика
-                </button>
-            </div>
-            <div>
-                <button class="btn gap-2 btn-primary rounded-none w-full">
-                Путевой
-                </button>
-            </div>
-            <div>
-                <button class="btn gap-2 btn-primary rounded-none w-full">
-                Настройки
-                </button>
-            </div>
          </div>
       </div>
       <script>
